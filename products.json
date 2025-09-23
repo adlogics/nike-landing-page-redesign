@@ -1,0 +1,74 @@
+[
+    {
+    "id" : 1,
+    "name" : "Paris Saint-Germain 2025/26 Stadium Third",
+    "price" : 4695.00,
+    "image" : "./images/p1.png"
+    },
+    {
+    "id" : 2,
+    "name" : "Paris Saint-Germain 2025/26 Stadium Third",
+    "price" : 4695.00,
+    "image" : "./images/p2.png"
+    },
+    {
+    "id" : 3,
+    "name" : "Tottenham Hotspur 2025/26 Stadium Third",
+    "price" : 4695.00,
+    "image" : "./images/p3.png"
+    },
+    {
+    "id" : 4,
+    "name" : "Paris Saint-Germain 2024/25 Match Third",
+    "price" : 7995.00,
+    "image" : "./images/p4.png"
+    },
+    {
+    "id" : 5,
+    "name" : "PSG Strike Third",
+    "price" : 2795.00,
+    "image" : "./images/p5.png"
+    },
+    {
+    "id" : 6,
+    "name" : "F.C. Barcelona 2025/26 Match Third",
+    "price" : 7995.00,
+    "image" : "./images/p6.png"
+    },
+    {
+    "id" : 7,
+    "name" : "Chelsea F.C. 2025/26 Match Third",
+    "price" : 7995.00,
+    "image" : "./images/p7.png"
+    },
+    {
+    "id" : 8,
+    "name" : "Inter Milan 2025/26 Stadium Third",
+    "price" : 4695.00,
+    "image" : "./images/p8.png"
+    },
+    {
+    "id" : 9,
+    "name" : "Inter Milan 2025/26 Match Third",
+    "price" : 7995.00,
+    "image" : "./images/p9.png"
+    },
+    {
+    "id" : 10,
+    "name" : "Paris Saint-Germain Strike Third",
+    "price" : 2795.00,
+    "image" : "./images/p10.png"
+    },
+    {
+    "id" : 11,
+    "name" : "Liverpool F.C. Academy Pro Third",
+    "price" : 3795.00,
+    "image" : "./images/p11.png"
+    },
+    {
+    "id" : 12,
+    "name" : "Atlético Madrid 2025/26 Match Third",
+    "price" : 7995.00,
+    "image" : "./images/p12.png"
+    }
+]

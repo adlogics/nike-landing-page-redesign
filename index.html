@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Nike Redesign</title>
+  </head>
+  <body>
+    <div id="root">
+      <div id="nav">
+        <div class="nav-container">
+          <div id="nav-menu" onmouseleave="closeit()">
+            <ul id="menu-cont" role="menu">
+              <li onmouseenter="navbarOpen('New_Featured')">New & Featured</li>
+              <li onmouseenter="navbarOpen('Men')">Men</li>
+              <li onmouseenter="navbarOpen('Women')">Women</li>
+              <li onmouseenter="navbarOpen('Kids')">Kids</li>
+              <li onmouseenter="navbarClose()">SNKRS</li>
+            </ul>
+          </div>
+          <div id="nav-logo">
+            <img src="./images/001_nike-logos-swoosh-black.png" alt="" />
+          </div>
+          <div id="nav-cta">
+            <ul class="cta-menu">
+              <li>
+                <div class="search-container">
+                  <i class="ri-search-line"></i>
+                  <input
+                    class="input"
+                    type="text"
+                    placeholder="Search Products..."
+                  />
+                </div>
+              </li>
+              <li><i class="ri-account-circle-line"></i></li>
+              <li><i class="ri-heart-line"></i></li>
+              <li><i class="ri-shopping-bag-line"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div id="showit" onmouseleave="navbarClose()"></div>
+      </div>
+      <div id="main">
+        <section id="hero">
+          <div class="heroimg">
+            <img src="./images/nike-just-do-it.jpg" alt="" />
+          </div>
+          <div class="herotxt">
+            <h3>Only one way to find out.</h3>
+            <div class="rightside">
+              <h1>JUST DO IT.</h1>
+              <button id="primary-btn">Shop Now</button>
+            </div>
+          </div>
+        </section>
+        <section id="shop-tiles">
+          <div id="shop-tiles-container">
+            <div class="title">
+              <h2>Shop by category</h2>
+            </div>
+            <div class="tile-card-container">
+              <div class="tile-card">
+                <img src="./images/basketball-nike-just-do-it.png" alt="" />
+                <span>Basketball</span>
+              </div>
+              <div class="tile-card">
+                <img src="./images/football-nike-just-do-it.png" alt="" />
+                <span>Football</span>
+              </div>
+              <div class="tile-card">
+                <img src="./images/running-nike-just-do-it.jpg" alt="" />
+                <span>Running</span>
+              </div>
+              <div class="tile-card">
+                <img src="./images/tennis-nike-just-do-it.png" alt="" />
+                <span>Tennis</span>
+              </div>
+              <div class="tile-card">
+                <img src="./images/golf-nike-just-do-it.png" alt="" />
+                <span>Golf</span>
+              </div>
+              <div class="tile-card">
+                <img src="./images/skateboarding-nike-just-do-it.png" alt="" />
+                <span>Skateboarding</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="featured">
+          <div id="featured-container">
+            <div class="f-title">
+              <h2>Featured</h2>
+            </div>
+            <div class="featured-card-grid">
+              <div class="card">
+                <div class="card-txt">
+                  <h2>Training Essentials</h2>
+                  <button id="secondary-btn">Shop</button>
+                </div>
+                <img src="./images/nike-just-do-it1.png" alt="" />
+              </div>
+              <div class="card">
+                <div class="card-txt">
+                  <p>Look of Football</p>
+                  <h2>Total 90</h2>
+                  <button id="secondary-btn">Shop</button>
+                </div>
+                <img src="./images/nike-just-do-it2.png" alt="" />
+              </div>
+              <div class="card">
+                <div class="card-txt">
+                  <h2>Training Essentials</h2>
+                  <button id="secondary-btn">Shop</button>
+                </div>
+                <img src="./images/nike-just-do-it3.png" alt="" />
+              </div>
+              <div class="card">
+                <div class="card-txt">
+                  <h2>Sneaker Of The Week</h2>
+                  <button id="secondary-btn">Shop</button>
+                </div>
+                <img src="./images/nike-just-do-it4.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="shop-products">
+          <div class="p-title">
+              <h2>Shop Third Kits</h2>
+            </div>
+          <div id="products-container">
+            <div class="product-card">
+              <img src="./images/p1.png" alt="product1">
+              <div class="c-txt">
+                <span>Paris Saint-Germain 2025/26 Stadium Third</span>
+                <h3>MRP : ₹ 4695.00</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer id="footer">
+          <div id="footer-container">
+            <div class="top-content">
+              <div class="list">
+                <ul>
+                  <span>Resource</span>
+                  <div class="li">
+                    <li>Gift Cards</li>
+                    <li>Find a Store</li>
+                    <li>Membership</li>
+                    <li>Nike Journal</li>
+                    <li>Site Feedback</li>
+                  </div>
+                </ul>
+                <ul>
+                  <span>Help</span>
+                  <div class="li">
+                    <li>Get Help</li>
+                    <li>Order Status</li>
+                    <li>Shipping and Delivery</li>
+                    <li>Order Cancellation</li>
+                    <li>Payment Options</li>
+                    <li>Gift Card Balance</li>
+                    <li>Contact Us</li>
+                  </div>
+                </ul>
+                <ul>
+                  <span>Company</span>
+                  <div class="li">
+                    <li>About Nike</li>
+                    <li>News</li>
+                    <li>Careers</li>
+                    <li>Investors</li>
+                    <li>Purpose</li>
+                    <li>Sustainability</li>
+                  </div>
+                </ul>
+              </div>
+              <div class="location">
+                <i class="ri-global-line"></i>
+                <p>India</p>
+              </div>
+            </div>
+            <div class="bottom-content">
+              <ul>
+                <span>© 2025 Nike, Inc. All rights reserved</span>
+                <li>Guides</li>
+                <li>Term of Sale</li>
+                <li>Term of Use</li>
+                <li>Nike Privacy Policy</li>
+                <li>Privacy Settings</li>
+              </ul>
+            </div>
+
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="local.js"></script>
+  </body>
+</html>
