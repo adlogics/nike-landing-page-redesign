@@ -1,0 +1,117 @@
+/* Desktops */
+@media (max-width:1440px){
+
+}
+
+/* Tablets */
+@media (max-width:900px){
+    #nav .menu-burger{
+        display: block;
+    }
+    .menu-open{
+        display: block;
+    }
+    #nav-menu{
+        display: none;
+    }
+    #showit{
+        display: none;
+    }
+    #nav-cta .cta-menu{
+        gap: 8px;
+    }
+    .b-title ul li{
+    font-size: 0.625rem;
+    }
+
+
+    .herotxt h1{
+    font-size: 4rem;
+    font-family: "nikefutura";
+}
+
+/* shop by category */
+.tile-card-container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  height: 100%;
+  gap: 16px 0px;
+  /* flex-wrap: wrap; */
+}
+
+
+
+
+}
+
+/* Mobile */
+@media (max-width:600px){
+    #hero{
+    width: 100%;
+    padding: 0px 8px;
+    /* height: 100vh; */
+}
+
+.herotxt h1{
+    font-size: 3rem;
+    font-family: "nikefutura";
+}
+.herotxt h3{
+  font-size: 0.625rem;
+  font-weight: 100;
+}
+#primary-btn{
+      font-size: 0.625rem;
+
+}
+
+
+
+/* shop by category */
+.tile-card-container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  height: 100%;
+  gap: 16px 0px;
+  /* flex-wrap: wrap; */
+}
+/* products */
+#products-container{
+  grid-template-columns: repeat(1, 1fr);
+}
+
+/* fetured sec */
+.featured-card-grid{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+}
+#secondary-btn{
+    font-size: 0.875rem;
+}
+.card-txt h2{
+    font-size: 1.25rem;
+}
+.card-txt p{
+    font-size: 0.75rem;
+}
+
+
+/* footer */
+/* #footer-container{
+  flex-wrap: wrap;
+} */
+
+#footer-container .top-content .list{
+    flex-wrap: wrap;
+}
+.bottom-content ul{
+  flex-wrap: wrap;
+}
+
+
+
+
+}
+

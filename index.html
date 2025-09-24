@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -14,7 +15,21 @@
     <div id="root">
       <div id="nav">
         <div class="nav-container">
-          <div id="nav-menu" onmouseleave="closeit()">
+          <div class="menu-burger">
+            <i onclick="ham()" class="ham ri-menu-line"></i>
+          </div>
+          <div class="menu-open">
+            <i onclick="closeMenu()" class="close ri-close-large-fill"></i>
+            <ul id="menu-open-cont" role="menu">
+              <li>New & Featured</li>
+              <li>Men</li>
+              <li>Women</li>
+              <li>Kids</li>
+              <li>SNKRS</li>
+            </ul>
+
+          </div>
+          <div id="nav-menu">
             <ul id="menu-cont" role="menu">
               <li onmouseenter="navbarOpen('New_Featured')">New & Featured</li>
               <li onmouseenter="navbarOpen('Men')">Men</li>
@@ -27,15 +42,11 @@
             <img src="./images/001_nike-logos-swoosh-black.png" alt="" />
           </div>
           <div id="nav-cta">
+            
             <ul class="cta-menu">
               <li>
                 <div class="search-container">
-                  <i class="ri-search-line"></i>
-                  <input
-                    class="input"
-                    type="text"
-                    placeholder="Search Products..."
-                  />
+                  <i onclick="searchBox()" class="search ri-search-line"></i>
                 </div>
               </li>
               <li><i class="ri-account-circle-line"></i></li>
@@ -45,6 +56,8 @@
           </div>
         </div>
         <div id="showit" onmouseleave="navbarClose()"></div>
+        <div id="searchshow" onmouseleave="searchClose()"></div>
+
       </div>
       <div id="main">
         <section id="hero">
@@ -132,11 +145,11 @@
         </section>
         <section id="shop-products">
           <div class="p-title">
-              <h2>Shop Third Kits</h2>
-            </div>
+            <h2>Shop Third Kits</h2>
+          </div>
           <div id="products-container">
             <div class="product-card">
-              <img src="./images/p1.png" alt="product1">
+              <img src="./images/p1.png" alt="product1" />
               <div class="c-txt">
                 <span>Paris Saint-Germain 2025/26 Stadium Third</span>
                 <h3>MRP : ₹ 4695.00</h3>
@@ -197,7 +210,6 @@
                 <li>Privacy Settings</li>
               </ul>
             </div>
-
           </div>
         </footer>
       </div>

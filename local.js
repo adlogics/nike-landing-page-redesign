@@ -197,21 +197,6 @@ const navbarClose = () => {
 };
 
 
-let imgIndex = 0;
-const imageschange = ["./images/shoe1-nike-just-do-it-removebg.png", "./images/shoe2-nike-just-do-it-removebg-preview.png", "./images/shoe3-nike-just-do-it-removebg-preview.png" ]
-
-const imgElement = document.getElementById('mid-images');
-function changeImage() {
-  imgIndex = (imgIndex + 1) % imageschange.length;
-//   imgElement.style.opacity = 0;
-  setTimeout(() => {
-    imgElement.src = imageschange[imgIndex];  // Update the image source
-    // imgElement.style.opacity = 1;
-    }, 1000);
-}
-setInterval(changeImage,1000)
-
-
 // productssss
 let productListHTML = document.getElementById("products-container");
 let productList = [];
@@ -245,3 +230,50 @@ const initApp = ()=>{
     })
 }
 initApp();
+
+
+//hamburger button toggle
+const hamIcon = document.querySelector(".ham");
+const closeIcon = document.querySelector(".close");
+const menuOpen = document.querySelector(".menu-open")
+const ham = ()=>{
+    menuOpen.style.display ="block"
+}
+
+const closeMenu = ()=> {
+    menuOpen.style.display = "none"
+}
+closeIcon.addEventListener('click',closeMenu);
+
+// search button click
+let output3; 
+const searchIcon = document.querySelector(".search")
+const searchBox = ()=>{
+    searchIcon.addEventListener('click', ()=>{
+        const searchShowBox = document.getElementById("searchshow")
+        if(searchShowBox.style.display==="none"||searchShowBox.style.display===""){
+            output3 = `<div class="search-box">
+            <div class="s-container"><i class="ri-search-line"></i>
+            <input class="input" type="text" placeholder="Search Products..."/></div>
+            <div class="b-txt">
+                  <div class="top-title"><span>Popular Search Terms</span></div>
+                  <div class="b-title"><ul>
+                  <li>Nike Air force 1</li>
+                  <li>Running shoes</li>
+                  <li>barcelona t-shirt</li>
+                  <li>jackets</li>
+                  <li>runnig vest</li>
+                  </ul></div>
+                </div>
+                </div>`
+            searchShowBox.innerHTML= output3;
+            searchShowBox.style.display="block"
+        }
+        else{
+            searchShowBox.style.display="none"
+        }
+    })
+}
+const searchClose = () => {
+  document.getElementById("searchshow").innerHTML = "";
+};
